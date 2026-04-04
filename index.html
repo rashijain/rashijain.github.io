@@ -15,16 +15,17 @@
 
     <nav>
         <div class="nav-content">
-            <a href="#" class="logo">RJ.</a>
+            <a href="#home" class="logo">RJ.</a>
             <div class="nav-links">
                 <a href="#about">About</a>
+                <a href="#skills">Skills</a>
                 <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
             </div>
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container" id="home">
         <header class="hero section-fade">
             <div class="profile-wrapper">
                 <img src="profile.jpg" alt="Rashi Jain" class="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=Rashi+Jain&background=0D8ABC&color=fff&size=150'">
@@ -40,141 +41,44 @@
             </div>
         </header>
 
-        <section id="about" class="section-fade">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                <div class="about-text glass-card">
-                    <p>
-                        I am an Artificial Intelligence Researcher and former Software Development Engineer at Amazon Web Services (AWS). I specialize in bridging the gap between cutting-edge machine learning research and scalable, production-ready cloud infrastructure.
-                    </p>
-                    <br>
-                    <p>
-                        Currently pursuing my Master of Science in Artificial Intelligence at DePaul University (3.9 GPA), my research focuses on creating AI-driven computer vision pipelines for medical diagnostics. Whether I am fine-tuning LLMs, optimizing deep learning architectures, or reducing deployment efforts through automation, I thrive on building systems that are both innovative and highly reliable.
-                    </p>
-                </div>
-                <div class="skills-wrapper glass-card">
-                    <h3 class="subsection-title">Core Arsenal</h3>
-                    <div class="skills-container">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">PyTorch</span>
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">Gen AI & LLMs</span>
-                        <span class="skill-tag">Computer Vision</span>
-                        <span class="skill-tag">AWS Architecture</span>
-                        <span class="skill-tag">Docker & CI/CD</span>
-                        <span class="skill-tag">LangChain</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="section-fade">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
-                        <span class="timeline-date">Sep 2024 - Present</span>
-                        <h3>Graduate Research Assistant - AI</h3>
-                        <h4 class="company-text">DePaul University</h4>
-                        <ul class="task-list">
-                            <li>Architecting a lung cancer detection system using Variational Autoencoders (VAEs) on CT scans to identify malignant nodules.</li>
-                            <li>Formulated a multi-stage deep learning framework for ankle MRI analysis, integrating ResNet50 for classification (84% accuracy).</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
-                        <span class="timeline-date">Aug 2021 - July 2023</span>
-                        <h3>Software Development Engineer</h3>
-                        <h4 class="company-text">Amazon Web Services (AWS)</h4>
-                        <ul class="task-list">
-                            <li>Engineered scalable backend services and security infrastructure for the Amazon Connect cloud platform.</li>
-                            <li>Designed an API to facilitate search functionality, lowering dependency on List and Describe APIs by 80%.</li>
-                            <li>Attained a 99% reduction in deployment efforts by implementing CI/CD pipelines across 11 AWS regions.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
-                        <span class="timeline-date">Sep 2020 - May 2021</span>
-                        <h3>Graduate Research Assistant - Data Science</h3>
-                        <h4 class="company-text">University of Central Florida</h4>
-                        <ul class="task-list">
-                            <li>Built end-to-end automated data pipelines with ML models to analyze large-scale SEC financial datasets.</li>
-                            <li>Reduced data collection time by 95% through automation.</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="projects" class="section-fade">
-            <h2 class="section-title">Selected Projects</h2>
-            <div class="projects-grid">
-                
-                <div class="project-card glass-card">
-                    <div class="project-header">
-                        <i class="fas fa-brain project-icon"></i>
-                        <!-- <div class="project-links">
-                            <a href="https://github.com/rashijain" target="_blank"><i class="fab fa-github"></i></a>
-                        </div> -->
-                    </div>
-                    <h3>Agentic RAG Orchestrator</h3>
-                    <p class="project-desc">Engineered an orchestrator using Gemini-2.5-Flash that autonomously executes hybrid retrieval strategies and triggers Google Search fallbacks to bridge knowledge gaps.</p>
-                    <div class="project-metrics">
-                        <span><i class="fas fa-chart-line"></i> 0.43 MRR</span>
-                        <span><i class="fas fa-star"></i> 3.36/5.0 Accuracy</span>
-                    </div>
-                    <div class="tech-stack">
-                        <span>LLMs</span><span>RAG</span><span>Gemini API</span>
-                    </div>
-                </div>
-
-                <div class="project-card glass-card">
-                    <div class="project-header">
-                        <i class="fas fa-street-view project-icon"></i>
-                    </div>
-                    <h3>Pedestrian Detection</h3>
-                    <p class="project-desc">Fine-tuned YOLOv8-Large on the Cityscapes dataset to detect pedestrians in complex urban scenes.</p>
-                    <div class="project-metrics">
-                        <span><i class="fas fa-bullseye"></i> 65.5% mAP</span>
-                        <span><i class="fas fa-check-circle"></i> ~80% Precision</span>
-                    </div>
-                    <div class="tech-stack">
-                        <span>Computer Vision</span><span>YOLOv8</span><span>PyTorch</span>
-                    </div>
-                </div>
-
-                <div class="project-card glass-card">
-                    <div class="project-header">
-                        <i class="fas fa-photo-video project-icon"></i>
-                    </div>
-                    <h3>Multimodal Recommender</h3>
-                    <p class="project-desc">Implemented a dual-encoder multimodal recommendation system (Vision-Textual) for product discovery.</p>
-                    <div class="project-metrics">
-                        <span><i class="fas fa-trophy"></i> 75.71% Top-5 Accuracy</span>
-                    </div>
-                    <div class="tech-stack">
-                        <span>Deep Learning</span><span>Dual-Encoders</span><span>NLP</span>
-                    </div>
-                </div>
-
-            </div>
-        </section>
+        <div id="about-container"></div>
+        <div id="skills-container"></div>
+        <div id="experience-container"></div>
+        <div id="projects-container"></div>
     </div>
 
     <footer>
         <p>&copy; 2026 Rashi Jain. Designed for the Future.</p>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <script>
+        async function loadSection(id, file) {
+            try {
+                const response = await fetch(file);
+                if (response.ok) {
+                    const text = await response.text();
+                    document.getElementById(id).innerHTML = text;
+                }
+            } catch (error) {
+                console.error("Error loading component: ", file);
+            }
+        }
+
+        async function buildPage() {
+            // Wait for all sections to be fetched and injected
+            await loadSection('about-container', 'about.html');
+            await loadSection('skills-container', 'skills.html');
+            await loadSection('experience-container', 'experience.html');
+            await loadSection('projects-container', 'projects.html');
+            
+            // Inject the main script file ONLY AFTER HTML is loaded 
+            // so the scroll animations know the elements exist
+            const script = document.createElement('script');
+            script.src = 'assets/js/script.js';
+            document.body.appendChild(script);
+        }
+        
+        buildPage();
+    </script>
 </body>
 </html>
